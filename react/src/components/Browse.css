@@ -1,0 +1,29 @@
+.App-welcome {
+    text-align: center;
+}
+
+.browse-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.load-more-button {
+    background-color: #FFF;
+    padding: 15px 100px 13px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: 1px solid #cbb27d;
+    color: #cbb27d;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.load-more-button:hover {
+    background-color: #cbb27d;
+    color: #FFF;
+}
+
+.browse-container [class*="col-"] {
+    padding-bottom: 30px;
+}

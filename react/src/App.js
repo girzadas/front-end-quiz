@@ -1,8 +1,28 @@
 import React from 'react';
-import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+import Browse from './components/Browse';
+import Item from './components/Item';
 
 function App() {
-  return <h1 className='App-welcome'>Welcome!</h1>;
-}
-
-export default App;
+    return (
+      <Router>
+        <Switch>
+          <Route path="/browse">
+            <Browse />
+          </Route>
+          <Route path="/item/:id">
+            <Item />
+          </Route>
+          <Route path="/">
+            <Browse />
+          </Route>
+        </Switch>
+    </Router>
+    );
+  }
+  
+  export default App;
